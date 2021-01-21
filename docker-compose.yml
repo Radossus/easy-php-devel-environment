@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  web:
+    build: apache\
+    volumes:
+      - .\apache\httpdocs:/var/www/html
+    ports:
+      - 9090:80
+  db:
+    image: mysql
+    volumes:
+      - .\mysql\data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment: 
+      MYSQL_ROOT_PASSWORD: aaaaaa
+      MYSQL_DATABASE: dockertest
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    container_name: phpmyadmin
+    depends_on: 
+      - db
+    ports: 
+      - 8081:80
+    environment: 
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: aaaaaa
