@@ -1,5 +1,7 @@
 apache/httpdocs/*
-!apache/httpdocs/.gitkeep
+!apache/httpdocs/index.php
 
 mysql/data/*
 !mysql/data/.gitkeep
+
+myScript.sh
