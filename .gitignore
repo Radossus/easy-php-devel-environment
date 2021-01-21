@@ -1,2 +1,2 @@
-apache/httpdocs/*
-mysql/data/*
+/apache/httpdocs/*
+/mysql/data/*
