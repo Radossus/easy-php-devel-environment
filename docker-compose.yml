@@ -5,7 +5,7 @@ services:
     volumes:
       - .\apache\httpdocs:/var/www/html
     ports:
-      - 9090:80
+      - 8080:80
   db:
     image: mysql
     volumes:
@@ -13,7 +13,7 @@ services:
     ports:
       - 3306:3306
     environment: 
-      MYSQL_ROOT_PASSWORD: aaaaaa
+      MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: dockertest
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -25,4 +25,4 @@ services:
       - 8081:80
     environment: 
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: aaaaaa
+      MYSQL_ROOT_PASSWORD: secret
