@@ -1,2 +1,5 @@
-/apache/httpdocs/*
-/mysql/data/*
+apache/httpdocs/*
+!apache/httpdocs/.gitkeep
+
+mysql/data/*
+!mysql/data/.gitkeep
