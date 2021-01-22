@@ -30,7 +30,7 @@
         <div class="bg-light pt-5 pb-5">
             <div class="container">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><h3 class="mt-3">Your project folders::</h3></li>
+                    <li class="list-group-item active"><h3 class="mt-3">Your project folders::</h3></li>
                     <?php
                     $dir = "./";
 
