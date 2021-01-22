@@ -9,11 +9,14 @@
     <title>Welcome to Matric easy PHP development</title>
     </head>
     <body>
+    <?php
+        $PHPMYADMIN_PORT = '8081';
+    ?>
         <header class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h1 class="text-white">Welcome to Matric easy PHP development</h1>
+                        <div id="welcome-text" class="text-white">Welcome to Matric easy PHP development</div>
                             <p>Don't spend your time with the configuration of app servers.
                                 Containers are an excellent and quick solution for you as a developer!
                             </p>
@@ -24,48 +27,59 @@
                 </div>
             </div>
         </header>
-        <div class="bg-light pt-3 pb-5">
+        <div class="bg-light pt-5 pb-5">
             <div class="container">
-                <h2 class="mt-3">Your project folders::</h2>
-                <?php
-                $dir = "./";
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><h3 class="mt-3">Your project folders::</h3></li>
+                    <?php
+                    $dir = "./";
 
-                $a = scandir($dir);
+                    $a = scandir($dir);
 
-                foreach ($a as $item)
-                {
-                    if($item == '..' || str_contains($item,".") || str_contains($item,"intro-page"))
-                        continue;
+                    foreach ($a as $item)
+                    {
+                        if($item == '..' || str_contains($item,".") || str_contains($item,"intro-page"))
+                            continue;
 
-                    echo '<li>'. $item .'  <a href="http://'.$_SERVER['SERVER_NAME'] .':8080/'.$item.'" class="btn btn-success btn-sm" target="_blank"?>Open</a></li>';
-                }
+                        echo '<li class="list-group-item"><span data-feather="folder"></span> '. $item .'  <a href="http://'.$_SERVER['SERVER_NAME'] .':'.$_SERVER['SERVER_PORT'].'/'.$item.'" class="btn btn-success btn-sm float-right" target="_blank"?><span data-feather="arrow-right-circle"></span> Open</a></li>';
+                    }
 
-                ?>
+                    ?>
+                </ul>
             </div>
         </div>
           <div class="container mt-5 mb-5">
               <div class="row">
                   <div class="col-md-6">
-                      <h2 class="mt-3">Web Server configuration::</h2>
-                      <ul>
-                          <li><strong>Server Name and ports: </strong><?php echo $_SERVER['SERVER_NAME'] ." : ". $_SERVER['SERVER_PORT']?></li>
-                          <li><strong>Server Software: </strong><?php echo $_SERVER['SERVER_SOFTWARE']?></li>
-                          <li><strong>Current PHP version</strong>: <?php echo phpversion()?></li>
-                          <li><strong>Server Document Root: </strong><?php echo $_SERVER['DOCUMENT_ROOT']?></li>
-                          <li><strong>Local Document Root: </strong>.\apache\httpdocs</li>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item active"><h3> Web Server configuration::</h3></li>
+                          <li class="list-group-item"><strong>Server Name and ports: </strong><?php echo $_SERVER['SERVER_NAME'] ." : ". $_SERVER['SERVER_PORT']?></li>
+                          <li class="list-group-item"><strong>Server Software: </strong><?php echo $_SERVER['SERVER_SOFTWARE']?></li>
+                          <li class="list-group-item"><strong>Current PHP version</strong>: <?php echo phpversion()?></li>
+                          <li class="list-group-item"><strong>Server Document Root: </strong><?php echo $_SERVER['DOCUMENT_ROOT']?></li>
+                          <li class="list-group-item"><strong>Local Document Root: </strong>.\apache\httpdocs</li>
                       </ul>
                   </div>
                   <div class="col-md-6">
-                      <!-- <img src="/intro-page/images/PhpMyAdmin_logo.svg" width="150" height="100"> -->
-                      <h2 class="mt-3">PhpMyAdmin Configuration::</h2>
-                      <li><strong>PhpMyAdmin: <a href="http://<?php echo $_SERVER['SERVER_NAME'] .":8081"?>" class="btn btn-success btn-sm" target="_blank"</strong><?php echo $_SERVER['SERVER_NAME'] .":8081"?></a></li>
-                      <li><strong>User Name: </strong>root</li>
-                      <li><strong>Passwort: </strong>secret</li>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item active"><h3>PhpMyAdmin Configuration::</h3></li>
+                          <li class="list-group-item"><strong>PhpMyAdmin: <a href="http://<?php echo $_SERVER['SERVER_NAME'] .":".$PHPMYADMIN_PORT?>" class="btn btn-success btn-sm" target="_blank"</strong><?php echo $_SERVER['SERVER_NAME'] .":8081"?></a></li>
+                          <li class="list-group-item"><strong>User Name: </strong>root</li>
+                          <li class="list-group-item"><strong>Passwort: </strong>secret</li>
+                      </ul>
                   </div>
               </div>
           </div>
     <footer>
 
     </footer>
+
+        <!-- ICONS -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+        <script>
+            feather.replace()
+        </script>
+
+
     </body>
 </html>
