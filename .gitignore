@@ -1,5 +1,6 @@
 apache/httpdocs/*
 !apache/httpdocs/index.php
+!apache/httpdocs/intro-page/*
 
 mysql/data/*
 !mysql/data/.gitkeep
