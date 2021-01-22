@@ -19,7 +19,7 @@
                             </p>
                     </div>
                     <div class="col-md-4">
-                        <img src="/intro-page/images/clipart2251437.png" class="mx-auto d-block">
+                        <img src="/intro-page/images/docker-logo.png" class="mx-auto d-block">
                     </div>
                 </div>
             </div>
