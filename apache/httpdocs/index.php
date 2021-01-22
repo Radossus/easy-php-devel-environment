@@ -30,7 +30,7 @@
         <div class="bg-light pt-5 pb-5">
             <div class="container">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item active"><h3 class="mt-3">Your project folders::</h3></li>
+                    <li class="list-group-item bg-dark text-white"><h3 class="mt-3">Your project folders::</h3></li>
                     <?php
                     $dir = "./";
 
@@ -52,8 +52,8 @@
               <div class="row">
                   <div class="col-md-6">
                       <ul class="list-group list-group-flush">
-                          <li class="list-group-item active"><h3> Web Server configuration::</h3></li>
-                          <li class="list-group-item"><strong>Server Name and ports: </strong><?php echo $_SERVER['SERVER_NAME'] ." : ". $_SERVER['SERVER_PORT']?></li>
+                          <li class="list-group-item bg-dark text-white"><h3> Web Server configuration::</h3></li>
+                          <li class="list-group-item"><strong>Server Name and ports: </strong><?php echo $_SERVER['SERVER_NAME'] .":". $_SERVER['SERVER_PORT']?></li>
                           <li class="list-group-item"><strong>Server Software: </strong><?php echo $_SERVER['SERVER_SOFTWARE']?></li>
                           <li class="list-group-item"><strong>Current PHP version</strong>: <?php echo phpversion()?></li>
                           <li class="list-group-item"><strong>Server Document Root: </strong><?php echo $_SERVER['DOCUMENT_ROOT']?></li>
@@ -62,8 +62,9 @@
                   </div>
                   <div class="col-md-6">
                       <ul class="list-group list-group-flush">
-                          <li class="list-group-item active"><h3>PhpMyAdmin Configuration::</h3></li>
-                          <li class="list-group-item"><strong>PhpMyAdmin: <a href="http://<?php echo $_SERVER['SERVER_NAME'] .":".$PHPMYADMIN_PORT?>" class="btn btn-success btn-sm" target="_blank"</strong><?php echo $_SERVER['SERVER_NAME'] .":8081"?></a></li>
+                          <li class="list-group-item bg-dark text-white"><h3>MySQL Configuration::</h3></li>
+                          <li class="list-group-item"><strong>PhpMyAdmin console: </strong><?php echo $_SERVER['SERVER_NAME'] .":".$PHPMYADMIN_PORT ?> <a href="http://<?php echo $_SERVER['SERVER_NAME'] .":".$PHPMYADMIN_PORT ?>" class="btn btn-success btn-sm float-right" target="_blank"><span data-feather="arrow-right-circle"></span> Open</a></li>
+                          <li class="list-group-item"><strong>MySql server name: </strong>db</li>
                           <li class="list-group-item"><strong>User Name: </strong>root</li>
                           <li class="list-group-item"><strong>Passwort: </strong>secret</li>
                       </ul>
