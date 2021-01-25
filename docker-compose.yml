@@ -6,6 +6,8 @@ services:
       - .\apache\httpdocs:/var/www/html
     ports:
       - 8080:80
+    environment: 
+      NETTE_DEBUG: "HslWZy4PjYRSBoa9F718"
   db:
     image: mysql
     volumes:

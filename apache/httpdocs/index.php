@@ -38,7 +38,7 @@
 
                     foreach ($a as $item)
                     {
-                        if($item == '..' || str_contains($item,".") || str_contains($item,"intro-page"))
+                        if($item == '..' || strpos($item,".") !== false || strpos($item,"intro-page") !== false)
                             continue;
 
                         echo '<li class="list-group-item"><span data-feather="folder"></span> '. $item .'  <a href="http://'.$_SERVER['SERVER_NAME'] .':'.$_SERVER['SERVER_PORT'].'/'.$item.'" class="btn btn-success btn-sm float-right" target="_blank"?><span data-feather="arrow-right-circle"></span> Open</a></li>';
@@ -58,6 +58,7 @@
                           <li class="list-group-item"><strong>Current PHP version</strong>: <?php echo phpversion()?></li>
                           <li class="list-group-item"><strong>Server Document Root: </strong><?php echo $_SERVER['DOCUMENT_ROOT']?></li>
                           <li class="list-group-item"><strong>Local Document Root: </strong>.\apache\httpdocs</li>
+			  <li class="list-group-item"><strong>Server IP address: </strong><?php echo $_SERVER['REMOTE_ADDR']?></li>
                       </ul>
                   </div>
                   <div class="col-md-6">
