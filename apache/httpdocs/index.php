@@ -73,6 +73,29 @@
               </div>
           </div>
     <footer>
+    <?php
+    if (isset($_POST['button']))
+    {
+         exec('/etc/init.d/apache2 reload',$output, $return);
+         echo " Output: "; var_dump($output) ;
+         echo  " Return: "; print_r($return);
+         
+        if(!$return) {
+          $result = "<script>console.log('can not restart apache2');</script>";
+          echo "ne";
+      } else {
+          $result = "<script>console.log('restart apache2 successfuly');</script>";
+          echo "ano";
+      }
+    }
+?>
+
+    <form method="post">
+    <p>
+        <button name="button">Restart Apache</button>
+    </p>
+    </form>
+
 
     </footer>
 

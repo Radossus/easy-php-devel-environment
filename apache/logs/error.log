@@ -1,0 +1,39 @@
+[Wed Jan 27 23:01:52.922487 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Wed Jan 27 23:01:52.932256 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jan 28 22:33:11.737118 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Thu Jan 28 22:33:11.742485 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jan 28 22:42:49.703267 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu Jan 28 22:46:38.385077 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Thu Jan 28 22:46:38.386160 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Jan 29 21:20:23.489813 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Jan 29 21:20:30.227155 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Fri Jan 29 21:20:30.230044 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Feb 01 21:05:24.497711 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Mon Feb 01 21:05:24.506986 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Feb 02 07:00:07.554284 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Wed Feb 03 10:29:15.408758 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Wed Feb 03 10:29:15.641826 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Feb 03 11:33:50.269665 2021] [negotiation:error] [pid 21] [client 172.18.0.1:39610] AH00687: Negotiation: discovered file(s) matching request: /var/www/html/wp-matric/index (None could be negotiated).
+[Wed Feb 03 11:55:05.621511 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Wed Feb 03 14:43:18.086154 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Wed Feb 03 14:43:18.121001 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Feb 04 11:35:21.204620 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Thu Feb 04 11:35:21.215249 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Feb 12 12:48:56.434096 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Fri Feb 12 12:48:56.437527 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Feb 12 12:51:09.693419 2021] [authz_core:error] [pid 18] [client 172.19.0.1:36518] AH01630: client denied by server configuration: /var/www/html/vch1, referer: http://localhost:8080/
+[Fri Mar 26 22:07:19.653980 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Fri Mar 26 22:07:19.662489 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Mar 26 22:22:19.203160 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Mar 26 22:22:46.681620 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Fri Mar 26 22:22:46.683080 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Mar 26 22:25:07.044232 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Mar 26 22:33:32.554935 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Fri Mar 26 22:33:32.583752 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+sh: 1: /usr/sbin/sendmail: not found
+sh: 1: /usr/sbin/sendmail: not found
+[Fri Mar 26 23:04:54.919359 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Mar 27 20:41:42.118030 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Sat Mar 27 20:41:42.120324 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Mon Mar 29 12:22:51.222683 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.14 configured -- resuming normal operations
+[Mon Mar 29 12:22:51.242149 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
